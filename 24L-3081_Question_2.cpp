@@ -208,7 +208,7 @@ void playhangman(const vector<string> word)
     vector<char> wrongGuesses;
     int mistakes = 0;
 
-    while (mistakes < MaxMistakes && !isWordGuessed(Guessedwords)) 
+    while (mistakes <= MaxMistakes && !isWordGuessed(Guessedwords)) 
     {
         displayProgress(Guessedwords, mistakes, wrongGuesses);
         char guess = getUserGuess();
